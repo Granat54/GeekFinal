@@ -21,5 +21,17 @@ void PrintArray(string[] array)
     Console.Write("]");
 }
 
+
+int CountLessFour(string[] arr)
+{
+    int count = 0;
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (arr[i].Length <=3) count++;
+    }
+    return count;
+}
+
 string[] array = CreateArrayRndInt(4);
 PrintArray(array);
+int newSize = CountLessFour(array);
